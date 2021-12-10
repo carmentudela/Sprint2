@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint 2</title>
     <link rel="stylesheet" href="./css/main.css">
+
+
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container">
+    <nav class=" navbar navbar-expand-lg ">
+        <div class=" container">
             <a class="navbar-brand" href="#">
                 <img src="./Imagenes/logo-bookmark.svg" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <img src="./Imagenes/icon-hamburger.svg">
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-5">
@@ -45,8 +49,9 @@
                 <div id="fondo1"></div>
                 <img class="img-fluid" src="./Imagenes/illustration-hero.svg" id="hero">
             </div>
+
             <div class=" col-lg-6 ">
-                <div class="container mt-lg-5 p-lg-5 text-center text-lg-start">
+                <div class="container mt-lg-5 p-lg-5 text-center text-lg-start ">
                     <h1 class="me-lg-5 ">A Simple Bookmark Manager</h1>
                     <p class="py-lg-3 fs-5">
                         A clean and simple interface to organize your favourite
@@ -62,6 +67,102 @@
         </div>
     </div>
     <!--Features-->
+    <div class="row">
+        <div class="col-lg-4 mx-auto text-center  fs-5 mx-3">
+            <h2>Features</h2>
+            <p class=>Our aim is to make it quick and easy for you to acces your favourite websites.
+                Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+        </div>
+    </div>
+    <!--Tabs-->
+    <div class="row mt-3">
+        <div class=" col-12 col-lg-6  mx-auto mb-5">
+            <nav>
+                <div class="nav nav-tabs flex-column flex-md-row nav-fill" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-simple-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-simple" type="button" role="tab" aria-controls="nav-simple"
+                        aria-selected="true">Simple Bookmarking</button>
+                    <button class="nav-link" id="nav-speedy-tab" data-bs-toggle="tab" data-bs-target="#nav-speedy"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy
+                        Searching</button>
+                    <button class="nav-link" id="nav-easy-tab" data-bs-toggle="tab" data-bs-target="#nav-easy"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy
+                        Sharing</button>
+                </div>
+            </nav>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <!--Contenido Tab 1-->
+            <div class="tab-pane fade show active" id="nav-simple" role="tabpanel" aria-labelledby="nav-simple-tab">
+                <div class="container-md">
+                    <div class="row mt-3">
+                        <div class="col-lg-6 ">
+                            <div id="fondo2"></div>
+                            <img class="img-fluid" src="./Imagenes/illustration-features-tab-1.svg" id="Tab1">
+                        </div>
+                        <div class=" col-lg-6 ">
+                            <div class="container mt-5 p-lg-5 text-center text-lg-start">
+                                <h2 class="me-lg-5 ">Bookmark in one click</h2>
+                                <p class="py-lg-3 fs-5">
+                                    Organize your bookmarks however you like. Our simple drag-and-drop
+                                    interface
+                                    gives you complete control over how you manage your favourite sites
+                                </p>
+                                <button type="button" class="btn btn-primary">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Contenido Tab 2-->
+            <div class="tab-pane fade" id="nav-speedy" role="tabpanel" aria-labelledby="nav-speedy-tab">
+                <div class="container-md">
+                    <div class="row mt-3">
+                        <div class="col-lg-6 ">
+                            <div class="fondo2"></div>
+                            <img class="img-fluid" src="./Imagenes/illustration-features-tab-2.svg" id="Tab2">
+                        </div>
+                        <div class=" col-lg-6 ">
+                            <div class="container mt-lg-5 p-lg-5 text-center text-lg-start">
+                                <h2 class="me-lg-5 ">Intelligent search</h2>
+                                <p class="py-lg-3 fs-5">
+                                    Our powerful search feature will help you find saved sites in no time at all.
+                                    No need to trawl trough all of your bookmarks.
+                                </p>
+                                <button type="button" class="btn btn-primary">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Contenido Tab 3-->
+            <div class="tab-pane fade" id="nav-easy" role="tabpanel" aria-labelledby="nav-easy-tab">
+                <div class="container-md">
+                    <div class="row mt-3">
+                        <div class="col-lg-6 ">
+                            <div class="fondo2"></div>
+                            <img class="img-fluid" src="./Imagenes/illustration-features-tab-3.svg" id="Tab3">
+                        </div>
+                        <div class=" col-lg-6 ">
+                            <div class="container mt-lg-5 p-lg-5 text-center text-lg-start">
+                                <h2 class="me-lg-5 ">Share your bookmarks</h2>
+                                <p class="py-lg-3 fs-5">
+                                    Easily share your bookmarks and collections with others.
+                                    Create a shareable link that you can send a t the click of a button.
+                                </p>
+                                <button type="button" class="btn btn-primary">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cards-->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

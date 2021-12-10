@@ -1,84 +1,52 @@
-
+/*Variables sobreescritas de bootstrap*/
 
 $primary: #5265E1;
-$secodary:#FA5959;
+$secondary:#FA5959;
+$nav-link-hover-color: $secondary;
+$nav-link-color:#6c757d;
+
+$nav-tabs-link-active-border-color: #FFF #FFF $secondary #FFF;
+$nav-tabs-link-hover-border-color:#FFF;
+$nav-tabs-border-width:  2px;
+
+/*Formula para calcular la unidad de medida responsive para el diseño del polígono de fondo (de Jhey Tompkins's artículo 
+https://css-tricks.com/advice-for-complex-css-illustrations/) */
+:root {
+  --size: 60;
+  --unit: calc((var(--size) / 300) * 1vmin);
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+
 #fondo1{
-    width:300px ;
-    height:220px;
-    border-radius: 200px 0px 0px 200px;
+     height: calc(var(--unit) * 220);
+     width: calc(var(--unit) * 300);
+   
+    border-radius: 50% 0% 0% 50%;
     background: $primary;
-    position: relative;
+   position:relative;
     top:35%;
     left:15%;
 }
+#fondo2{
+    //  height: calc(var(--unit) * 220);
+    //  width: calc(var(--unit) * 400);
+   height:300px;
+   width:300px;
+    border-radius: 0% 50% 50% 0%;
+    background: $primary;
+     position: relative;
+    top:35%;
+    left:15%;
+
+}
+
 #hero{
     position: relative;
-    bottom:25%;
+    bottom:15%;
     right: 5%;
 
 }
 
-// Pantallas XXL
-@media (min-width:1400px){
-#fondo1{
-    width:500px;
-    height:350px;
-    top:25%;
-    right:15%;
-}
-#hero{
-    bottom:35%;
-    right:15%;
-
-}
-}
-//Pantallas XL
-@media only screen and (min-device-width:1200px) and (max-device-width:1399px){
-#fondo1{
-    width:450px;
-    height:300px;
-    top:25%;
-    right:15%;
-}
-#hero{
-    position: relative;
-    bottom:35%;
-    right:15%;
-
-}
-}
-//Pantallas LG
-@media only screen and (min-device-width: 992px) and (max-device-width:1199px){
- #fondo1{
-    width:380px;
-    height:250px;
-    top:25%;
-    right:15%;
-}
-#hero{
-    bottom:35%;
-    right:15%;
-
-}
-}
-//Pantallas MD
-@media only screen and (min-device-width:768px) and (max-device-width:991px){
- #fondo1{
-    width:580px;
-    height:380px;
-    bottom:15%;
-    left:15%;
-}
-}
-//Pantallas SM
-@media only screen and (min-device-width:576px) and (max-device-width:767px){
- #fondo1{
-    width:480px;
-    height:300px;  
-    left:10%;
-}
 
 
-}
