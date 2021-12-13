@@ -2,12 +2,21 @@
 
 $primary: #5265E1;
 $secondary:#FA5959;
+/*links*/
 $nav-link-hover-color: $secondary;
 $nav-link-color:#6c757d;
 
+/*Tabs*/
 $nav-tabs-link-active-border-color: #FFF #FFF $secondary #FFF;
 $nav-tabs-link-hover-border-color:#FFF;
 $nav-tabs-border-width:  2px;
+
+/*Accordion*/
+$accordion-button-active-bg:white;
+$accordion-button-active-color:black;
+$accordion-button-focus-box-shadow: #FFF;
+$accordion-icon-color:$primary;
+$accordion-icon-active-color:$secondary;
 
 
 /*Formula para calcular la unidad de medida responsive para el diseño del polígono de fondo (de Jhey Tompkins's artículo 
@@ -16,9 +25,41 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
   --size: 60;
   --unit: calc((var(--size) / 300) * 1vmin);
 }
+/*Bootstrap*/
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+/*Botones*/
+.btn{
+    box-shadow: -2px 6px 17px 3px rgba(180,187,225,0.37);
 
+}
+.btn-primary:hover{
+    background:white;
+    color:$primary;
+
+}
+.btn-ligth{
+    background:#F5F5F6;
+    
+}
+.btn-ligth:hover{
+    border-color:#6c757d;
+}
+.btn-secondary{
+    color:white;
+    
+}
+.btn-secondary:hover{
+    background:white;
+    color:$secondary;
+}
+
+/*Accordion*/
+.accordion-button:hover{
+    color:$secondary;
+}
+
+/*Polígonos de fondo*/
 #fondo1{
     height: calc(var(--unit) * 220);
     width: calc(var(--unit) * 300);
@@ -34,11 +75,12 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
     border-radius: 0% 50% 50% 0%;
     background: $primary;
     position: relative;
-    top:25%;
+    top:20%;
     right:15%;
     z-index: -1;
 
 }
+/*Posicionamiento imágenes*/
 
 #hero{
     position: relative;
@@ -51,11 +93,15 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
     bottom:40%;
     left:10%;
 }
+
+/*Sombra cards*/
 .card{
     box-shadow: 0px 12px 10px 3px #B4BBE1;
     
 
 }
+/*Media queries posicionamiento cards*/
+
 @media (max-width:991px){
 #card1, #card2, #card3 {
     margin:5% auto ;
@@ -86,11 +132,11 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
  #card2{
      position:relative;
     left:30%;
-    top:10%;
+    bottom:5%;
 }
  #card3{
     position:relative;
     right:20%;
-    top: 20%;
+    margin-bottom:15%;
 }
  }
