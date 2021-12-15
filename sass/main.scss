@@ -1,7 +1,9 @@
-/*Variables sobreescritas de bootstrap*/
 
+/*Variables sobreescritas de bootstrap*/
+/
 $primary: #5265E1;
 $secondary:#FA5959;
+$dark:#14154C;
 /*links*/
 $nav-link-hover-color: $secondary;
 $nav-link-color:#6c757d;
@@ -9,7 +11,7 @@ $nav-link-color:#6c757d;
 /*Tabs*/
 $nav-tabs-link-active-border-color: #FFF #FFF $secondary #FFF;
 $nav-tabs-link-hover-border-color:#FFF;
-$nav-tabs-border-width:  2px;
+$nav-tabs-border-width:  3px;
 
 /*Accordion*/
 $accordion-button-active-bg:white;
@@ -100,6 +102,9 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
     
 
 }
+
+
+
 /*Media queries posicionamiento cards*/
 
 @media (max-width:991px){
@@ -140,3 +145,20 @@ https://css-tricks.com/advice-for-complex-css-illustrations/) */
     margin-bottom:15%;
 }
  }
+ /* media queries posicionamiento imágenes y fondos dispositivos pequeños*/
+@media (max-width:576px){
+    #hero{
+    bottom:25%;
+}
+#fondo1{
+    top:35%;
+    left:30%;
+}
+#Tab1,#Tab2,#Tab3{
+    bottom:25%;
+}
+#fondo2, #fondo3, #fondo4{
+    top:35%;
+    
+}
+}
